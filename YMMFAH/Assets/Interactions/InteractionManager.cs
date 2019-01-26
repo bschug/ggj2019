@@ -141,11 +141,23 @@ public class InteractionManager : MonoBehaviour,
     public Animation myAnimation;
     public Animator animator;
     public float progressModifier;
+    public float progressFinish;
     private float animationProgress = 0f;
 
     private void UpdateAnimation(float progress)
     {
-        animator.speed = progressModifier * progress;
+        animationProgress += progress;
+
+        if (animationProgress > progressFinish)
+        {
+            animator.speed = Mathf.Max(animator.speed, progressModifier * progress);
+        }
+        else
+        {
+            animator.speed = progressModifier * progress;
+        }
+
+        
     }
 
     #endregion
