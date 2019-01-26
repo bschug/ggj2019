@@ -3,15 +3,10 @@ using System.Collections;
 using TMPro;
 
 [RequireComponent(typeof(TextMeshProUGUI))]
-public class TextFromLetterPage : MonoBehaviour
+public class TextFromLetterPage : PageDependentBinding
 {
-    public LetterDefinition Letter;
-    public int PageNr;
     TextMeshProUGUI Target;
-
     private string currentText;
-
-    private LetterPage Page => Letter.Pages.Length > PageNr ? Letter.Pages[PageNr] : null;
 
     public void Update ()
     {
