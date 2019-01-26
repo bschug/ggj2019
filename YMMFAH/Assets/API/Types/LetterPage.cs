@@ -4,6 +4,7 @@ using System;
 
 public enum PageLayout
 {
+    None,
     TextOnly,
     ImageOnly,
     TextThenImage,
