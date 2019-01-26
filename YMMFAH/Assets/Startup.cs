@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class Startup : MonoBehaviour
 {
     public StringVariable LetterId;
+    public StringVariable ComposeLetterWebsite;
 
     private void Start ()
     {
@@ -16,7 +17,7 @@ public class Startup : MonoBehaviour
             SceneManager.LoadScene( "Receive" );
         }
         else {
-            SceneManager.LoadScene( "Send" );
+            Application.OpenURL( ComposeLetterWebsite.Value );
         }
     }
 }
