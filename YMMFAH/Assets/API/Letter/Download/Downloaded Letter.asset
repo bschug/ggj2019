@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba043beb39e7b024eb1196f52dafcd9d, type: 3}
   m_Name: Downloaded Letter
   m_EditorClassIdentifier: 
-  SenderName: Benjamin
-  RecipientName: Julie
+  SenderName: '?'
+  RecipientName: '?'
   Pages:
-  - Text: Hello Julie!
+  - Text: '?'
     ImageUrl: 
     Layout: 0
-  - Text: I love you so much.
+  - Text: '?'
     ImageUrl: 
     Layout: 0
-  - Text: You make me feel at home.
+  - Text: '?'
     ImageUrl: 
     Layout: 0
