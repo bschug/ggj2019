@@ -99,7 +99,7 @@ public class InteractionManager : MonoBehaviour,
                 sumWeights += weight;
             }
 
-            delta = new Vector3(delta.x / sumWeights, delta.y / sumWeights, delta.z / sumWeights);
+            delta = new Vector3(delta.x / sumWeights, delta.y / sumWeights, 0);
             delta = delta - lastInputs[0];
 
             // get angle
@@ -112,7 +112,7 @@ public class InteractionManager : MonoBehaviour,
 
             UpdateAnimation(progress);
             
-            Debug.Log(delta.magnitude.ToString() + " " + angleModifier.ToString() + " " + progress.ToString());
+            //Debug.Log(delta.magnitude.ToString() + " " + angleModifier.ToString() + " " + progress.ToString());
 
         }
     }
@@ -120,7 +120,8 @@ public class InteractionManager : MonoBehaviour,
     public void OnPointerUp(PointerEventData eventData)
     {
         pointerDown = false;
-        UpdateAnimation(0);        Debug.Log("Pointer Up");
+        UpdateAnimation(0);
+        Debug.Log("Pointer Up");
     }
 
     public void OnPointerDown(PointerEventData eventData)
