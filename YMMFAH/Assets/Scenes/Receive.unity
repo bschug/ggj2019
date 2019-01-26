@@ -262,7 +262,7 @@ PrefabInstance:
     - target: {fileID: 7240376020249077076, guid: 3667fb938aba73a4cb7b2b3133c82f20,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -27.099976
+      value: -27.099854
       objectReference: {fileID: 0}
     - target: {fileID: 255841247629767445, guid: 3667fb938aba73a4cb7b2b3133c82f20,
         type: 3}
@@ -963,7 +963,7 @@ PrefabInstance:
     - target: {fileID: 7240376020249077076, guid: 3667fb938aba73a4cb7b2b3133c82f20,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -27.099976
+      value: -27.099854
       objectReference: {fileID: 0}
     - target: {fileID: 255841247629767445, guid: 3667fb938aba73a4cb7b2b3133c82f20,
         type: 3}
@@ -1102,7 +1102,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'We hope you enjoyed this message.
+  m_text: 'This web app was created in 40 hours at the Global Game Jam 2019.
+
+
+    We hope you enjoyed this message.
 
 
     If you have someone who makes you feel at home, press the button below and tell
@@ -1183,11 +1186,11 @@ MonoBehaviour:
     lineCount: 6
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1440,7 +1443,7 @@ PrefabInstance:
     - target: {fileID: 7240376020249077076, guid: 3667fb938aba73a4cb7b2b3133c82f20,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -27.099976
+      value: -27.099854
       objectReference: {fileID: 0}
     - target: {fileID: 255841247629767445, guid: 3667fb938aba73a4cb7b2b3133c82f20,
         type: 3}
@@ -2772,7 +2775,7 @@ PrefabInstance:
     - target: {fileID: 7240376020249077076, guid: 3667fb938aba73a4cb7b2b3133c82f20,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -27.099976
+      value: -27.099854
       objectReference: {fileID: 0}
     - target: {fileID: 255841247629767445, guid: 3667fb938aba73a4cb7b2b3133c82f20,
         type: 3}
@@ -3083,7 +3086,7 @@ PrefabInstance:
     - target: {fileID: 7240376020249077076, guid: 3667fb938aba73a4cb7b2b3133c82f20,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -27.099976
+      value: -27.099854
       objectReference: {fileID: 0}
     - target: {fileID: 255841247629767445, guid: 3667fb938aba73a4cb7b2b3133c82f20,
         type: 3}
