@@ -12,7 +12,7 @@ public class Startup : MonoBehaviour
     {
         var url = new Uri(Application.absoluteURL);
         if (!string.IsNullOrEmpty(url.Fragment)) {
-            LetterId.Value = url.Fragment;
+            LetterId.Value = url.Fragment.Trim(new char[] { '#' } );
             SceneManager.LoadScene( "Receive" );
         }
         else {

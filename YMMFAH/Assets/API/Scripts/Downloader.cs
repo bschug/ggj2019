@@ -24,8 +24,8 @@ public class Downloader : ScriptableObject
 
     public async Task Download (string letterId)
     {
-        var request = UnityWebRequest.Get( BaseUrl + letterId + "/letter.json.dat" );
-        Debug.Log( "Downloading " + BaseUrl + letterId + "/letter.json.dat" );
+        var request = UnityWebRequest.Get( BaseUrl + letterId + "/letter.json" );
+        Debug.Log( "Downloading " + BaseUrl + letterId + "/letter.json" );
         await request.SendWebRequest();
 
         if (request.isHttpError || request.isNetworkError) {
