@@ -15,7 +15,7 @@ public class InteractionManager : MonoBehaviour,
     public Camera cam;
     public GameObject interactionStart;
     public GameObject interactionEnd;
-
+    
     private Vector3 interactionStartScreenspace;
     private Vector3 interactionEndScreenspace;
 
@@ -33,6 +33,20 @@ public class InteractionManager : MonoBehaviour,
 
         // set animator
         animator.speed = 0;
+
+        // set on animation complete event
+        AnimationEvent animationEvent = new AnimationEvent();
+        animationEvent.time = 1f;
+        animationEvent.functionName = "InvokeOnComplete";
+
+        myAnimation.clip.AddEvent(animationEvent);
+        InteractionCompleter interactionCompleter = myAnimation.gameObject.GetComponent<InteractionCompleter>();
+        if (interactionCompleter == null)
+        {
+            interactionCompleter = myAnimation.gameObject.AddComponent<InteractionCompleter>();
+        }
+        interactionCompleter.parentInteractionManager = this;
+
     }
 
     #endregion
@@ -130,13 +144,18 @@ public class InteractionManager : MonoBehaviour,
 
     private void UpdateAnimation(float progress)
     {
-        //animationProgress += progressModifier * progress;
-
-        //animator.Play(myAnimation.clip.name, -1, animationProgress);
-        animator.speed = progressModifier * progress;        
-
+        animator.speed = progressModifier * progress;
     }
 
+    #endregion
+    //------------------------
+    //------------------------
+    #region On Complete
+
+    [Header("On Complete")]
+
+    public UnityEngine.Events.UnityEvent onComplete;
+    
     #endregion
     //------------------------
     //------------------------
