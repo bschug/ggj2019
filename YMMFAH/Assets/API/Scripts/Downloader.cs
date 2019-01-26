@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Networking;
+using System.Threading.Tasks;
 
 public class DownloadError : System.Exception
 {
@@ -21,7 +22,7 @@ public class Downloader : ScriptableObject
         Download( DebugLetterId );
     }
 
-    public async void Download (string letterId)
+    public async Task Download (string letterId)
     {
         var request = UnityWebRequest.Get( BaseUrl + letterId + "/letter.json.dat" );
         Debug.Log( "Downloading " + BaseUrl + letterId + "/letter.json.dat" );
