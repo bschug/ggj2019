@@ -36,5 +36,26 @@ public class Downloader : ScriptableObject
         Debug.Log( "Download complete" );
         var json = request.downloadHandler.text;
         JsonUtility.FromJsonOverwrite( json, Target );
+
+        foreach (var page in Target.Pages) {
+            if (!string.IsNullOrEmpty( page.ImageUrl )) {
+                page.ImageTexture = await LoadImage( page.ImageUrl );
+            }
+        }
+    }
+
+    async Task<Texture2D> LoadImage (string url)
+    {
+        var request = UnityWebRequest.Get( url );
+        await request.SendWebRequest();
+        if (request.isHttpError || request.isNetworkError) {
+            Debug.LogError( "Failed to load " + url );
+            return null;
+        }
+        var texture = new Texture2D( 1, 1 );
+        texture.LoadImage( request.downloadHandler.data, true );
+        Debug.LogFormat( "Loaded {0}", url );
+        Debug.LogFormat( "Loaded {0}x{1} texture", texture.width, texture.height );
+        return texture;
     }
 }
