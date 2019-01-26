@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+<style>
+div {
+    margin-top: 30px;
+}
+input {
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+
+    <h1>Send Happiness</h1>
+
+    <form action="./compose" method="POST" enctype="multipart/form-data">
+<div style="background-image:assets/img/testimonial_img1.png;">
+        <div>
+            <p>
+                <label for="SenderName">What's your name?</label><br>
+                <input type="text" name="SenderName" id="SenderName">
+            </p>
+            <p>
+                <label for="RecipientName">Who makes you feel at home?</label><br>
+                <input type="text" name="RecipientName" id="RecipientName">
+            </p>
+        </div>
+</div>
+
+        <div class="page">
+            <h2 for="Page1_text">Say something about yourself:</h2><br>
+            <select name="Page1_layout">
+                <option value="TextOnly">Text Only</option>
+                <option value="ImageOnly">Image Only</option>
+                <option value="TextThenImage">Text then Image</option>
+                <option value="ImageThenText">Image then Text</option>
+            </select><br>
+            <input type="text" name="Page1_text" id="Page1_text"><br>
+            <input type="file" name="Page1_image">
+        </div>
+
+        <div class="page">
+            <h2 for="Page2_text">What do you like about the recipient?</h2><br>
+            <select name="Page2_layout">
+                <option value="TextOnly">Text Only</option>
+                <option value="ImageOnly">Image Only</option>
+                <option value="TextThenImage">Text then Image</option>
+                <option value="ImageThenText">Image then Text</option>
+            </select><br>
+            <input type="text" name="Page2_text" id="Page2_text"><br>
+            <input type="file" name="Page2_image">
+        </div>
+
+        <div class="page">
+            <h2 for="Page3_text">What are you thankful for?</h2><br>
+            <select name="Page3_layout">
+                <option value="TextOnly">Text Only</option>
+                <option value="ImageOnly">Image Only</option>
+                <option value="TextThenImage">Text then Image</option>
+                <option value="ImageThenText">Image then Text</option>
+            </select><br>
+            <input type="text" name="Page3_text" id="Page3_text"><br>
+            <input type="file" name="Page3_image">
+        </div>
+
+        <div class="page">
+            <h2 for="Page4_text">What do you wish for the future?</h2><br>
+            <select name="Page4_layout">
+                <option value="TextOnly">Text Only</option>
+                <option value="ImageOnly">Image Only</option>
+                <option value="TextThenImage">Text then Image</option>
+                <option value="ImageThenText">Image then Text</option>
+            </select><br>
+            <input type="text" name="Page4_text" id="Page4_text"><br>
+            <input type="file" name="Page4_image">
+        </div>
+
+        <div class="page">
+            <h2 for="Page5_text">What else do you want to tell the recipient?</h2><br>
+            <select name="Page5_layout">
+                <option value="TextOnly">Text Only</option>
+                <option value="ImageOnly">Image Only</option>
+                <option value="TextThenImage">Text then Image</option>
+                <option value="ImageThenText">Image then Text</option>
+            </select><br>
+            <input type="text" name="Page5_text" id="Page5_text"><br>
+            <input type="file" name="Page5_image">
+        </div>
+
+        <div class="page">
+            <h2 for="Page6_text">What does the recipient mean to you?</h2><br>
+            <select name="Page6_layout">
+                <option value="TextOnly">Text Only</option>
+                <option value="ImageOnly">Image Only</option>
+                <option value="TextThenImage">Text then Image</option>
+                <option value="ImageThenText">Image then Text</option>
+            </select><br>
+            <input type="text" name="Page6_text" id="Page6_text"><br>
+            <input type="file" name="Page6_image">
+        </div>
+
+        <br>
+        <button type="submit">You make me feel at home</button>
+
+    </form>
+
+</body>
+
+</html>
