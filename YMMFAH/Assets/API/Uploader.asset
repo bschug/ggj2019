@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd2d90bc7563d1545990832638db0283, type: 3}
   m_Name: Uploader
   m_EditorClassIdentifier: 
-  Letter: {fileID: 0}
-  Url: 
-  UploadedLetterId: 
+  Letter: {fileID: 11400000, guid: 97128627946a0844caf98604545220c8, type: 2}
+  Url: https://rl9u7nyid3.execute-api.eu-central-1.amazonaws.com/dev/letter
+  UploadedLetterId: FJFSPxx_T06bO84UHepXjA

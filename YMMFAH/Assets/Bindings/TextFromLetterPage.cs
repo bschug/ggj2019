@@ -2,16 +2,20 @@
 using System.Collections;
 using TMPro;
 
+[RequireComponent(typeof(TextMeshProUGUI))]
 public class TextFromLetterPage : MonoBehaviour
 {
-    public LetterPage Page;
-    public TextMeshProUGUI Target;
+    public LetterDefinition Letter;
+    public int PageNr;
+    TextMeshProUGUI Target;
 
     private string currentText;
 
+    private LetterPage Page => Letter.Pages.Length > PageNr ? Letter.Pages[PageNr] : null;
+
     public void Update ()
     {
-        if (currentText != Page.Text) {
+        if (currentText != Page?.Text) {
             ForceUpdate();
         }
     }
@@ -19,7 +23,8 @@ public class TextFromLetterPage : MonoBehaviour
     [ContextMenu("Apply Now")]
     public void ForceUpdate ()
     {
-        currentText = Page.Text;
+        Target = Target ?? GetComponent<TextMeshProUGUI>();
+        currentText = Page != null ? Page.Text : "";
         Target.text = currentText;
     }
 }

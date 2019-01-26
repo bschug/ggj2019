@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b6d30debb5bfa54abae0945acd79e6f, type: 3}
   m_Name: Downloader
   m_EditorClassIdentifier: 
-  Target: {fileID: 0}
-  BaseUrl: https://rl9u7nyid3.execute-api.eu-central-1.amazonaws.com/dev
-  DebugLetterId: 
+  Target: {fileID: 11400000, guid: 0ab36ac3491d0914f964dbdb24bc5c29, type: 2}
+  BaseUrl: https://s3.amazonaws.com/ymmfah/
+  DebugLetterId: FJFSPxx_T06bO84UHepXjA

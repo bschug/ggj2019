@@ -10,8 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba043beb39e7b024eb1196f52dafcd9d, type: 3}
-  m_Name: Letter
+  m_Name: Downloaded Letter
   m_EditorClassIdentifier: 
-  SenderName: 
-  RecipientName: 
-  Pages: []
+  SenderName: '?'
+  RecipientName: '?'
+  Pages:
+  - Text: '?'
+    ImageUrl: 
+    Layout: 0
+  - Text: '?'
+    ImageUrl: 
+    Layout: 0
+  - Text: '?'
+    ImageUrl: 
+    Layout: 0
