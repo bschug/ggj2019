@@ -16,5 +16,6 @@ public class LetterPage
 {
     public string Text;
     public string ImageUrl;
-    public PageLayout Layout;
+    [SerializeField] string Layout;
+    public PageLayout PageLayout => (PageLayout)PageLayout.Parse(typeof(PageLayout), Layout );
 }
