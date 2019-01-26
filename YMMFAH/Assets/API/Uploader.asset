@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2d90bc7563d1545990832638db0283, type: 3}
+  m_Name: Uploader
+  m_EditorClassIdentifier: 
+  Letter: {fileID: 11400000, guid: 97128627946a0844caf98604545220c8, type: 2}
+  Url: https://rl9u7nyid3.execute-api.eu-central-1.amazonaws.com/dev/letter
+  UploadedLetterId: FJFSPxx_T06bO84UHepXjA

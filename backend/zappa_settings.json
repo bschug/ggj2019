@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "app_function": "ymmfah.app",
+        "aws_region": "eu-central-1",
+        "profile_name": "default",
+        "project_name": "backend",
+        "runtime": "python3.6",
+        "s3_bucket": "zappa-ymmfah"
+    }
+}
