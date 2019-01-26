@@ -12,15 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba043beb39e7b024eb1196f52dafcd9d, type: 3}
   m_Name: Downloaded Letter
   m_EditorClassIdentifier: 
-  SenderName: '?'
-  RecipientName: '?'
+  SenderName: Benjamin
+  RecipientName: Julie
   Pages:
-  - Text: '?'
-    ImageUrl: 
-    Layout: 0
-  - Text: '?'
-    ImageUrl: 
-    Layout: 0
-  - Text: '?'
-    ImageUrl: 
-    Layout: 0
+  - Text: 
+    ImageUrl: https://s3.amazonaws.com/ymmfah/wy7MiZNXT6eqBO_iDYakFA/Page1_image
+    Layout: ImageOnly
+  - Text: I just want to tell you that you are my favorite person in the world.
+    ImageUrl: https://s3.amazonaws.com/ymmfah/wy7MiZNXT6eqBO_iDYakFA/Page2_image
+    Layout: TextThenImage
+  - Text: I really appreciate that you learn my language even though it's really hard.
+    ImageUrl: https://s3.amazonaws.com/ymmfah/wy7MiZNXT6eqBO_iDYakFA/Page3_image
+    Layout: TextThenImage
+  - Text: Soon we will be together again and no one can separate us anymore.
+    ImageUrl: https://s3.amazonaws.com/ymmfah/wy7MiZNXT6eqBO_iDYakFA/Page4_image
+    Layout: TextOnly
+  - Text: We will have a family and a dog and we will be happy.
+    ImageUrl: https://s3.amazonaws.com/ymmfah/wy7MiZNXT6eqBO_iDYakFA/Page5_image
+    Layout: ImageThenText
+  - Text: You are loving and caring, wise and witty, open and honest, loyal and strong,
+      simple and funny.
+    ImageUrl: https://s3.amazonaws.com/ymmfah/wy7MiZNXT6eqBO_iDYakFA/Page6_image
+    Layout: TextOnly

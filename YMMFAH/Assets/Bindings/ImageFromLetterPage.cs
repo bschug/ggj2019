@@ -1,18 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(RawImage))]
 public class ImageFromLetterPage : PageDependentBinding
 {
-    string currentUrl;
-    RawImage image;
-    Texture2D texture;
+    [SerializeField] Image frame;
+    [SerializeField] RawImage image;
+    Texture2D currentTexture;
 
     public void Update ()
     {
-        if (currentUrl != Page.ImageUrl) {
+        if (currentTexture != Page.ImageTexture) {
             ForceUpdate();
         }
     }
@@ -20,7 +21,12 @@ public class ImageFromLetterPage : PageDependentBinding
     public void ForceUpdate ()
     {
         image = image ?? GetComponent<RawImage>();
-        currentUrl = Page.ImageUrl;
-        
+        currentTexture = Page.ImageTexture;
+
+        image.texture = currentTexture;
+        image.SizeToParent();
+        frame.rectTransform.offsetMin = image.rectTransform.offsetMin - new Vector2( 70, 70 );
+        frame.rectTransform.offsetMax = image.rectTransform.offsetMax + new Vector2( 70, 70 );
     }
+
 }

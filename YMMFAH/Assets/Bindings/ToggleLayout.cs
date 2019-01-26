@@ -13,14 +13,15 @@ public class ToggleLayout : PageDependentBinding
 
     public void Update ()
     {
-        if (currentLayout != Page?.Layout) {
+        if (currentLayout != Page?.PageLayout) {
             ForceUpdate();
         }
     }
 
+    [ContextMenu("Apply Now")]
     public void ForceUpdate ()
     {
-        currentLayout = Page.Layout;
+        currentLayout = Page.PageLayout;
         TextOnly.SetActive( currentLayout == PageLayout.TextOnly );
         ImageOnly.SetActive( currentLayout == PageLayout.ImageOnly );
         TextThenImage.SetActive( currentLayout == PageLayout.TextThenImage );
