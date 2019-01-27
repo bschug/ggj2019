@@ -8,6 +8,7 @@ public class LoadLetter : MonoBehaviour
     public StringVariable LetterId;
     public Downloader Downloader;
     public GameObject LoadingScreen;
+    public Image LoadingBar;
     public GameObject[] EnableWhenLoaded;
 
     public bool Download = true;
@@ -22,7 +23,7 @@ public class LoadLetter : MonoBehaviour
     private async Task LoadLetterNow () {
         if (Download) {
             LoadingScreen.SetActive( true );
-            await Downloader.Download( LetterId.Value );
+            await Downloader.Download( LetterId.Value, LoadingBar );
         }
         LoadingScreen.SetActive( false );
         foreach (var obj in EnableWhenLoaded) {

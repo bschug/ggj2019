@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.Networking;
 using System.Threading.Tasks;
+using UnityEngine.UI;
 
 public class DownloadError : System.Exception
 {
@@ -22,8 +23,12 @@ public class Downloader : ScriptableObject
         Download( DebugLetterId );
     }
 
-    public async Task Download (string letterId)
+    public async Task Download (string letterId, Image loadingBar = null )
     {
+        if (loadingBar != null) {
+            loadingBar.fillAmount = 0;
+        }
+
         var request = UnityWebRequest.Get( BaseUrl + letterId + "/letter.json" );
         Debug.Log( "Downloading " + BaseUrl + letterId + "/letter.json" );
         await request.SendWebRequest();
@@ -37,9 +42,16 @@ public class Downloader : ScriptableObject
         var json = request.downloadHandler.text;
         JsonUtility.FromJsonOverwrite( json, Target );
 
+        if (loadingBar != null) {
+            loadingBar.fillAmount = 1f / (float)Target.Pages.Length;
+        }
+
         foreach (var page in Target.Pages) {
             if (!string.IsNullOrEmpty( page.ImageUrl )) {
                 page.ImageTexture = await LoadImage( page.ImageUrl );
+                if (loadingBar != null) {
+                    loadingBar.fillAmount = 1f / (float)Target.Pages.Length;
+                }
             }
         }
     }

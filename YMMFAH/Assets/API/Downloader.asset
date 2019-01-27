@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b6d30debb5bfa54abae0945acd79e6f, type: 3}
   m_Name: Downloader
   m_EditorClassIdentifier: 
-  Target: {fileID: 11400000, guid: 0ab36ac3491d0914f964dbdb24bc5c29, type: 2}
+  Target: {fileID: 11400000, guid: 18a3d53a75ffaf3489080435ce78f659, type: 2}
   BaseUrl: http://ymmfah.poe.gg.s3.amazonaws.com/letters/
   DebugLetterId: FJFSPxx_T06bO84UHepXjA

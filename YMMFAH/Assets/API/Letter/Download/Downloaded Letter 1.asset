@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba043beb39e7b024eb1196f52dafcd9d, type: 3}
+  m_Name: Downloaded Letter 1
+  m_EditorClassIdentifier: 
+  SenderName: everyone
+  RecipientName: GGJ Orga Team
+  Pages:
+  - Text: For 10 years, you have always made sure we all feel welcome here.
+    ImageUrl: 
+    ImageTexture: {fileID: 2800000, guid: b761d65c572765e40a0bcc7ef76bb279, type: 3}
+    Layout: TextThenImage
+  - Text: You work the whole weekend so that we can have fun.
+    ImageUrl: 
+    ImageTexture: {fileID: 2800000, guid: db00f636dcc77754885c1f2942d4f454, type: 3}
+    Layout: TextThenImage
+  - Text: You work the whole year to make sure we have a place to jam.
+    ImageUrl: 
+    ImageTexture: {fileID: 2800000, guid: bcaa24c1aea3969459295e19954ba113, type: 3}
+    Layout: TextThenImage
+  - Text: You feed us when we are hungry. <br><br> And we're hungry all the time.
+    ImageUrl: 
+    ImageTexture: {fileID: 2800000, guid: e6f46b9c05a0cd548a4d377d53b448cc, type: 3}
+    Layout: TextThenImage
+  - Text: You are always there for us. Whether we need a cable, the Wifi password,
+      or just a  hug.
+    ImageUrl: 
+    ImageTexture: {fileID: 2800000, guid: c2a56dc46fd0bb64e8343f50ff2a5505, type: 3}
+    Layout: TextThenImage
+  - Text: Every year you help us meet cool new people.<br>Acquaintances become friends.<br>Friends
+      become a community.<br>Community becomes a family.
+    ImageUrl: 
+    ImageTexture: {fileID: 2800000, guid: d980fc7da051c0342b1705a7910db8cf, type: 3}
+    Layout: TextThenImage
