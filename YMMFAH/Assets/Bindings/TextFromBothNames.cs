@@ -27,6 +27,6 @@ public class TextFromBothNames : MonoBehaviour
         currentSender = Letter.SenderName;
         currentRecipient = Letter.RecipientName;
 
-        textField.text = string.Format( Format, currentSender, currentRecipient );
+        textField.text = string.Format( Format, currentRecipient, currentSender );
     }
 }

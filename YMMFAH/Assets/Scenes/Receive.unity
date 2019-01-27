@@ -192,7 +192,7 @@ PrefabInstance:
     - target: {fileID: 5917155159999124371, guid: 3667fb938aba73a4cb7b2b3133c82f20,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -117
+      value: -116.99988
       objectReference: {fileID: 0}
     - target: {fileID: 5917155159999124371, guid: 3667fb938aba73a4cb7b2b3133c82f20,
         type: 3}
@@ -360,7 +360,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1080, y: 1920}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -707,8 +707,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 90
-  m_fontSizeBase: 90
+  m_fontSize: 140
+  m_fontSizeBase: 140
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2559,6 +2559,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Page 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1190614421452132749, guid: 3667fb938aba73a4cb7b2b3133c82f20,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5917155159999124371, guid: 3667fb938aba73a4cb7b2b3133c82f20,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3563,6 +3568,7 @@ MonoBehaviour:
   LoadingScreen: {fileID: 2137244324}
   EnableWhenLoaded:
   - {fileID: 1374502176}
+  Download: 0
 --- !u!4 &2074796558
 Transform:
   m_ObjectHideFlags: 0
@@ -3731,7 +3737,7 @@ PrefabInstance:
     - target: {fileID: 5917155159999124371, guid: 3667fb938aba73a4cb7b2b3133c82f20,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -73
+      value: -72.99988
       objectReference: {fileID: 0}
     - target: {fileID: 5917155159999124371, guid: 3667fb938aba73a4cb7b2b3133c82f20,
         type: 3}
@@ -4647,7 +4653,7 @@ PrefabInstance:
     - target: {fileID: 9034390228489579851, guid: 46f955c9b959bf7488274aa6066b610c,
         type: 3}
       propertyPath: m_text
-      value: You make me feel at home.
+      value: You make us feel at home.
       objectReference: {fileID: 0}
     - target: {fileID: 9034390228489579851, guid: 46f955c9b959bf7488274aa6066b610c,
         type: 3}
@@ -4657,7 +4663,7 @@ PrefabInstance:
     - target: {fileID: 9034390228489579851, guid: 46f955c9b959bf7488274aa6066b610c,
         type: 3}
       propertyPath: m_fontSize
-      value: 112
+      value: 146
       objectReference: {fileID: 0}
     - target: {fileID: 9034390228489579851, guid: 46f955c9b959bf7488274aa6066b610c,
         type: 3}
@@ -4687,7 +4693,7 @@ PrefabInstance:
     - target: {fileID: 9034390228489579851, guid: 46f955c9b959bf7488274aa6066b610c,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 112
+      value: 146
       objectReference: {fileID: 0}
     - target: {fileID: 9034390228489579851, guid: 46f955c9b959bf7488274aa6066b610c,
         type: 3}

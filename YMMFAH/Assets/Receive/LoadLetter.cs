@@ -10,6 +10,8 @@ public class LoadLetter : MonoBehaviour
     public GameObject LoadingScreen;
     public GameObject[] EnableWhenLoaded;
 
+    public bool Download = true;
+
     TextFromLetterPage[] Pages;
 
     private void Start ()
@@ -17,9 +19,11 @@ public class LoadLetter : MonoBehaviour
         LoadLetterNow();
     }
 
-    private async Task LoadLetterNow () { 
-        LoadingScreen.SetActive( true );
-        await Downloader.Download( LetterId.Value );
+    private async Task LoadLetterNow () {
+        if (Download) {
+            LoadingScreen.SetActive( true );
+            await Downloader.Download( LetterId.Value );
+        }
         LoadingScreen.SetActive( false );
         foreach (var obj in EnableWhenLoaded) {
             obj.SetActive( true );

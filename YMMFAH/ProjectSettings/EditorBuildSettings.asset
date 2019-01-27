@@ -8,13 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Main.unity
     guid: 3a04bc736691974479ff7b2a1fb6c8fe
   - enabled: 1
     path: Assets/Scenes/Receive.unity
     guid: 706fa72d386f84b449303e96e4ce6a13
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Send.unity
     guid: 2e840b93340d1424e92cc16472feb895
   m_configObjects: {}
