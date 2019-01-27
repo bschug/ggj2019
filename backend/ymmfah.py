@@ -58,7 +58,7 @@ def compose():
         upload_file_to_s3(file, S3_BUCKET, 'letters/{0}/{1}'.format(letter_id, filename))
 
     return '''
-    <html><body><p>Send this link to your loved one: <a href="{1}#{0}">{1}#{0}</a></p></body></html>
+    <html><body style="position:relative; margin:0; height:100vh;"><p style="position:absolute; width:100%; text-align:center; top:50%; transform: translateY(-50%); font-size:20pt;">Send this link to your loved one:<br> <a href="{1}#{0}">{1}#{0}</a></p></body></html>
     '''.format(letter_id, BASE_URL)
 
 
