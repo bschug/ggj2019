@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Downloader
   m_EditorClassIdentifier: 
   Target: {fileID: 11400000, guid: 0ab36ac3491d0914f964dbdb24bc5c29, type: 2}
-  BaseUrl: https://s3.amazonaws.com/ymmfah/
+  BaseUrl: http://ymmfah.poe.gg.s3.amazonaws.com/letters/
   DebugLetterId: FJFSPxx_T06bO84UHepXjA
