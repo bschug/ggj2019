@@ -275,7 +275,8 @@ MonoBehaviour:
   interactionEnd: {fileID: 8300641627620460722}
   myAnimation: {fileID: 6632041480487377471}
   animator: {fileID: 3938685921691027843}
-  progressModifier: 0.3
+  progressModifier: 0.05
+  progressFinish: 2
   onComplete:
     m_PersistentCalls:
       m_Calls:
